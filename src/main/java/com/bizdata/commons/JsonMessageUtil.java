@@ -1,4 +1,4 @@
-package com.bizdata.commons.utils;
+package com.bizdata.commons;
 
 import java.util.HashMap;
 import java.util.Map;

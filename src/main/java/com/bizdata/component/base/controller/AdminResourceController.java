@@ -3,7 +3,7 @@ package com.bizdata.component.base.controller;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.bizdata.commons.utils.JsonMessageUtil;
+import com.bizdata.commons.JsonMessageUtil;
 import com.bizdata.component.base.entity.SysResource;
 import com.bizdata.component.base.service.ResourceService;
 import com.google.gson.Gson;

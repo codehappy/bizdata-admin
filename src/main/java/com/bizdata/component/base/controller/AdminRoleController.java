@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.bizdata.commons.utils.JsonMessageUtil;
+import com.bizdata.commons.JsonMessageUtil;
 import com.bizdata.component.base.entity.Role;
 import com.bizdata.component.base.entity.RoleResource;
 import com.bizdata.component.base.service.RoleService;
