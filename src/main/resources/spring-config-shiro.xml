@@ -102,7 +102,7 @@
 		</property>
 	</bean>
 
-	<!-- 安全管理器 -->
+	<!-- 安全管理器,shiro核心,所有交互都通过此进行控制,管理所有的subject,realm,session,cache等... -->
 	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
 		<!-- 此处传入单realm，当然也可以对应传入realms -->
 		<property name="realm" ref="userRealm" />
