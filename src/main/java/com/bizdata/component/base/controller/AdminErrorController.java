@@ -5,9 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
- * @author 顾剑峰<br/>
- *         创建时间：2015年12月17日 下午5:41:47<br/>
- *         描述：用户管理授权失败Controller，用于跳转到
+ * 用户管理授权失败Controller，用于跳转到
+ *
+ * @version 1.0
+ *
+ * @author sdevil507
  */
 @Controller
 @RequestMapping("/error")
