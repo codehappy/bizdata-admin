@@ -18,10 +18,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.bizdata.component.base.entity.SysLoginLogout;
 import com.bizdata.component.base.service.SysLoginLogoutService;
 
+
 /**
- * @author 顾剑峰<br/>
- *         创建时间：2015年7月21日 下午1:40:09<br/>
- *         描述：登录过滤器，继承FormAuthenticationFilter，重写onLoginSuccess方法 如果登录成功并且记录日志
+ * 登录过滤器，继承FormAuthenticationFilter，重写onLoginSuccess方法 如果登录成功并且记录日志
+ *
+ * @version 1.0
+ *
+ * @author sdevil507
  */
 public class LoginFilter extends FormAuthenticationFilter {
 	@Autowired
@@ -73,11 +76,11 @@ public class LoginFilter extends FormAuthenticationFilter {
 		}
 	}
 
+	
 	/**
-	 * @author 顾剑峰<br/>
-	 *         创建时间：2015年12月20日 下午10:15:46<br/>
-	 *         描述：判断是否是ajax请求
-	 * @param request
+	 * 判断是否是ajax请求
+	 *
+	 * @param request 请求
 	 * @return
 	 */
 	private boolean isAjaxRequest(HttpServletRequest request) {
@@ -85,9 +88,11 @@ public class LoginFilter extends FormAuthenticationFilter {
 				.equals(request.getHeader("X-Requested-With").toString()));
 	}
 
+	
 	/**
-	 * @param request
-	 *            记录登录日志，并且入库
+	 * 记录登录日志，并且入库
+	 *
+	 * @param request 请求
 	 */
 	private void saveLog(ServletRequest request) {
 		// 获取当前用户对象
